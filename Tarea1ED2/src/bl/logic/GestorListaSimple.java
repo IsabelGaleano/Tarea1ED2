@@ -20,6 +20,17 @@ public class GestorListaSimple {
         listaSimple.listar();
 
     }
+
+    public void agregarOrdenado(int dato) {
+        listaSimple.agregarOrdenado(dato);
+        System.out.println("Se agregó con exito");
+        System.out.println("Lista actual");
+        listaSimple.listar();
+    }
+
+    public void buscar(int dato) {
+        listaSimple.buscar(dato);
+    }
     public void mostrarLista() {
         listaSimple.listar();
     }
