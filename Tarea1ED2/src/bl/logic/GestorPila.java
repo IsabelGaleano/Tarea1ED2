@@ -16,7 +16,7 @@ public class GestorPila {
             System.out.println("El elemento no se pudo añadir la Pila");
         }
     }
-    public void pop(int dato) {
+    public void pop() {
         if (pila.pop()) {
             System.out.println("El elemento se eliminó con exito");
         } else {
@@ -25,6 +25,7 @@ public class GestorPila {
     }
 
     public void mostrarPila() {
+        System.out.println("==== PILA ====");
         pila.mostrarPila();
     }
 }
