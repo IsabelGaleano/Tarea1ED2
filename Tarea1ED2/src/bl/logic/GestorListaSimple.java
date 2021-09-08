@@ -15,23 +15,22 @@ public class GestorListaSimple {
 
     public void agregar(int dato) {
         listaSimple.agregarAlInicio(dato);
-        System.out.println("Se agregó con exito");
-        System.out.println("Lista actual");
-        listaSimple.listar();
+        System.out.println("==== SE AGREGÓ CON EXITO ====");
+        System.out.println("");
 
     }
 
     public void agregarOrdenado(int dato) {
         listaSimple.agregarOrdenado(dato);
-        System.out.println("Se agregó con exito");
-        System.out.println("Lista actual");
-        listaSimple.listar();
+        System.out.println("==== SE AGREGÓ CON EXITO ====");
+        System.out.println("");
     }
 
     public void buscar(int dato) {
         listaSimple.buscar(dato);
     }
     public void mostrarLista() {
+        System.out.println("==== LISTA ====");
         listaSimple.listar();
     }
 
