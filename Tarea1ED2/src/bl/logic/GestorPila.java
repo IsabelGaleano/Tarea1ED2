@@ -9,6 +9,14 @@ public class GestorPila {
         pila = new Pila();
     }
 
+    public Pila getPila() {
+        return pila;
+    }
+
+    public void setPila(Pila pila) {
+        this.pila = pila;
+    }
+
     public void push(int dato) {
         if (pila.push(dato)) {
             System.out.println("El elemento se añadió con exito a la Pila");

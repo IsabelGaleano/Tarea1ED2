@@ -1,6 +1,7 @@
 package ui;
 
 import bl.logic.GestorCola;
+import bl.logic.GestorInteraccion;
 import bl.logic.GestorListaSimple;
 import bl.logic.GestorPila;
 
@@ -15,6 +16,7 @@ public class Controller {
     GestorListaSimple gestorListaSimple = new GestorListaSimple();
     GestorPila gestorPila = new GestorPila();
     GestorCola gestorCola = new GestorCola();
+    GestorInteraccion gestorInteraccion = new GestorInteraccion();
 
     public Controller() {
     }
@@ -51,7 +53,11 @@ public class Controller {
         System.out.println("10. Eliminar elemento de la COLA");
         System.out.println("11. Mostrar COLA");
         System.out.println("");
-        System.out.println("12. SALIR DEL PROGRAMA");
+        System.out.println("======= INTERACCION ======= ");
+        System.out.println("12. Pasar PILA a COLA");
+        System.out.println("13. Pasar COLA a PILA");
+        System.out.println("");
+        System.out.println("14. SALIR DEL PROGRAMA");
 
     }
 
@@ -120,6 +126,14 @@ public class Controller {
                 break;
 
             case 12:
+                gestorInteraccion.pilaACola(gestorPila.getPila(), gestorCola.getCola());
+                break;
+
+            case 13:
+                gestorInteraccion.colaAPila(gestorPila.getPila(), gestorCola.getCola());
+                break;
+
+            case 14:
                 salir = true;
                 break;
         }
