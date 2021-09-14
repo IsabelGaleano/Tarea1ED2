@@ -6,6 +6,14 @@ public class GestorCola {
 
     private Cola cola;
 
+    public Cola getCola() {
+        return cola;
+    }
+
+    public void setCola(Cola cola) {
+        this.cola = cola;
+    }
+
     public GestorCola() {
         cola = new Cola();
     }
